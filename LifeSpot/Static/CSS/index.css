@@ -1,4 +1,5 @@
-﻿aside {
+﻿/* Стили для панели навигации (сайдбара) */
+aside {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,6 +26,7 @@
             color: aliceblue;
         }
 
+/* Основные стили для body */
 body {
     margin: 0;
     padding: 0 0 100px 11%;
@@ -33,6 +35,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Заголовки и блоки с видео */
 header {
     color: black;
     padding-left: 1%;
@@ -45,6 +48,7 @@ header {
     padding-top: 1%;
 }
 
+/* Стили для навигационного меню */
 nav {
     margin: 20px 0;
     padding-left: 11%;
@@ -54,6 +58,7 @@ h2 {
     padding-left: 11%;
 }
 
+/* Стили для списка */
 ul {
     padding-left: 13%;
     list-style-type: square;
@@ -100,6 +105,7 @@ li:nth-child(3n+1) {
     color: lightblue;
 }
 
+/* Стили для футера */
 footer {
     position: fixed;
     bottom: 0;
@@ -113,3 +119,34 @@ footer {
     border-top: 1px solid #ccc;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Стили для отзыва */
+.review-container, .review-button {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+/* Стили для текста отзыва */
+.review-text {
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+/* Стили для кнопки отзыва */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }

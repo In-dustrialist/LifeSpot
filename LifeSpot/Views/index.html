@@ -1,16 +1,20 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
-    <link rel="stylesheet" href="Static/CSS/index.css">
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script src="../Static/JS/index.js" defer></script> <!-- Подключаем JS для этой страницы -->
 </head>
+
 <body>
 
     <aside id="sidebar">
         <div class="navbar">
             <a href="/"><p>Все трансляции</p></a>
-            <a href="/"><p>О проекте</p></a>
+            <a href="/about"><p>О проекте</p></a>
+            <a href="/testing"><p>Тестирование</p></a>  <!-- Добавлена ссылка на страницу тестирования -->
         </div>
     </aside>
 
@@ -18,33 +22,37 @@
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <p>Покажем, что происходит прямо сейчас</p>
     </header>
-   
+
     <div class="search">
         <label for="video-search">Поиск трансляции: </label>
-        <input type="text" id="video-search" name="video-search" placeholder="Введите название города...">
+        <input type="text" id="video-search" name="video-search"
+               placeholder="Введите название города..."
+               oninput="filterContent()" size="50%">
     </div>
 
-  
     <div class="bordered">
         <div class="video-container">
             <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="Нью-Йорк" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="Нью-Йорк"
+                    frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video-container">
             <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="Санкт-Петербург" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="Санкт-Петербург"
+                    frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video-container">
             <h3 class="video-title">Лондон, автобусный маршрут</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="Лондон" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="Лондон"
+                    frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 
-    
     <footer>
         <p>Контакты: info@lifespot.ru | Telegram: @lifespot</p>
         <p>&copy; 2025 LifeSpot</p>
     </footer>
 
 </body>
+
 </html>
